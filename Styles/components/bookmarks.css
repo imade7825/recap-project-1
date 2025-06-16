@@ -7,7 +7,6 @@
   color: var(--gray-100, inherit); /* Konsistente Farbe mit Fallback */
   border: none;
   cursor: pointer; /* Bessere UX für interaktive Elemente */
-  transition: color 0.2s ease; /* Sanfter Farbübergang */
 }
 
 /* Bookmark-Symbol mit fester Größe */
