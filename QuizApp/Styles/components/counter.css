@@ -1,0 +1,25 @@
+/* Container für Zähler mit zentrierter Anordnung */
+.counter {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem; /* Konsistenter Abstand zwischen Elementen */
+}
+
+/* Einzelnes Zählelement mit abgerundetem Design */
+.counter_item {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Abstand zwischen Inhalten im Element */
+  background-color: var(--gray-100, #e5e7eb); /* Fallback-Farbe */
+  color: var(--gray-900, #1f2937); /* Kontrastreiche Farbe */
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 1rem; /* Klarheit für Text */
+  transition: background-color 0.2s ease; /* Sanfter Übergang für Interaktion */
+}
+
+/* Hover-Effekt für bessere Interaktivität */
+.counter_item:hover {
+  background-color: var(--gray-500, #6b7280); /* Dunklerer Hintergrund */
+  color: var(--gray-100, #e5e7eb); /* Kontrastreicher Text */
+}

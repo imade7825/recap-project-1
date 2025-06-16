@@ -1,0 +1,24 @@
+/* Bookmark-Button mit absoluter Positionierung */
+.bookmark {
+  position: absolute;
+  top: -3px;
+  right: 5px;
+  background-color: transparent;
+  color: var(--gray-100, inherit); /* Konsistente Farbe mit Fallback */
+  border: none;
+  cursor: pointer; /* Bessere UX für interaktive Elemente */
+  transition: color 0.2s ease; /* Sanfter Farbübergang */
+}
+
+/* Bookmark-Symbol mit fester Größe */
+.bookmark_icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* Aktives Bookmark-Symbol mit Hervorhebung */
+.bookmark_icon_active {
+  color: var(--green-500, #10b981); /* Aktive Farbe mit Fallback */
+  fill: var(--green-500, #10b981); /* Konsistente Füllung */
+  background-color: inherit; /* Entfernt unnötigen Hintergrund */
+}

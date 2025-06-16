@@ -1,0 +1,22 @@
+/* Layout-Kontainer mit flexibler Spaltenstruktur */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh; /* Dynamische Viewport-Höhe für moderne Browser */
+}
+
+/* Hauptinhalt, der den verbleibenden Platz einnimmt */
+.layout_main {
+  flex: 1 0 auto; /* Wächst, um Platz zu füllen, ohne zu schrumpfen */
+}
+
+/* Sticky Überschrift mit zentriertem Text */
+.layout_header{
+  padding: 1rem;
+  background-color: inherit; /* Beibehaltung der Hintergrundfarbe des Elternteils */
+  text-align: center;
+  border-bottom: 1px solid var(--gray-500, #6b7280); /* Fallback-Farbe für Konsistenz */
+  position: sticky;
+  top: 0;
+  z-index: 10; /* Höherer z-index für bessere Sichtbarkeit */
+}

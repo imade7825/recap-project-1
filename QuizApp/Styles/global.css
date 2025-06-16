@@ -1,0 +1,39 @@
+/* Verwende moderne Box-Sizing und entferne Standard-Margins */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Definiere Farben in :root für Wiederverwendbarkeit */
+:root {
+  /* Konsistente Farbnamen mit Systematik */
+  --gray-900: #1f2937; /* Dunkler Grauton */
+  --gray-500: #6b7280; /* Mittlerer Grauton */
+  --gray-100: #e5e7eb; /* Heller Grauton */
+  --red-500: #ef4444; /* Kräftiges Rot */
+  --blue-500: #3b82f6; /* Lebendiges Blau */
+  --green-500: #10b981; /* Frisches Grün */
+  --yellow-500: #f59e0b; /* Warmes Gelb */
+  --purple-500: #8b5cf6; /* Intensives Lila */
+  --pink-500: #ec4899; /* Auffälliges Pink */
+  --indigo-500: #6366f1; /* Tiefes Indigo */
+  --cyan-500: #06b6d4; /* Helles Cyan */
+  --orange-500: #f97316; /* Energisches Orange */
+}
+
+/* Grundlegende Body-Styling */
+body {
+  background-color: var(--gray-900);
+  color: var(--gray-100);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5; /* Verbessert Lesbarkeit */
+  min-height: 100vh; /* Stellt sicher, dass der Body mindestens die Fensterhöhe einnimmt */
+}
+
+/* Entferne Standard-Listenzeichen und Padding für UL */
+ul {
+  list-style: none;
+  padding: 0;
+}

@@ -1,0 +1,22 @@
+/* Container für Tag-Liste mit flexiblem Layout */
+.tag_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Korrigierter Wert mit Einheit */
+}
+
+/* Einzelnes Tag-Element mit abgerundetem Design */
+.tag_list_item {
+  background-color: var(--gray-100, #e5e7eb); /* Fallback-Farbe */
+  color: var(--gray-900, #1f2937); /* Konsistente Farbe mit Fallback */
+  padding: 0.25rem 0.5rem; /* Angepasstes Padding (2px = 0.125rem, 4px = 0.25rem) */
+  border-radius: 8px;
+  font-size: 0.875rem; /* Kleinere Schrift für Tags */
+  transition: background-color 0.2s ease, color 0.2s ease; /* Sanfte Übergänge */
+}
+
+/* Hover-Effekt für bessere Interaktivität */
+.tag_list_item:hover {
+  background-color: var(--gray-500, #6b7280); /* Dunklerer Hintergrund */
+  color: var(--gray-100, #e5e7eb); /* Kontrastreicher Text */
+}

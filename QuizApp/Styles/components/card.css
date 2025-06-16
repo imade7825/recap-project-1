@@ -1,0 +1,65 @@
+/* Kartencontainer mit abgerundeten Ecken */
+.card {
+  position: relative;
+  padding: 2rem 1rem;
+  background-color: var(--gray-500, #6b7280); /* Fallback-Farbe */
+  border-radius: 10px;
+  overflow: hidden; /* Verhindert Überlaufen von Inhalten */
+}
+
+/* Frage mit Abstand nach unten */
+.card_question {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem; /* Leicht größere Schrift für bessere Lesbarkeit */
+}
+
+/* Button mit zentriertem Design */
+.card_button {
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: var(--gray-100, inherit); /* Konsistente Farbe mit Fallback */
+  border: none;
+  border-radius: 999px; /* Voll abgerundete Ecken */
+  font-size: 1rem;
+  font-weight: 600; /* Etwas leichter als bold für moderne Optik */
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease; /* Sanfte Übergänge */
+}
+
+.card_button:hover,
+.card_button:focus {
+  background-color: var(--gray-900, #1f2937); /* Dunkler Hover/Fokus-Effekt */
+  color: var(--gray-100, #e5e7eb); /* Sicherstellung der Lesbarkeit */
+}
+
+/* Antwort, standardmäßig ausgeblendet */
+.card_answer {
+  display: none;
+  text-align: center;
+  background-color: var(--gray-100, #e5e7eb); /* Fallback-Farbe */
+  color: var(--gray-900, #1f2937); /* Kontrastreiche Farbe */
+  margin-inline: -1rem; /* Negative Ränder für volle Breite */
+  padding-block: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.summary-toggle:hover,
+.summary-toggle:focus {
+  color: white;
+}
+
+/* Sichtbare Antwort */
+.card_answer_visible {
+  display: block;
+}
+
+details[open] .summary-toggle::before {
+  content: "Hide Answer";
+}
+
+details:not([open]) .summary-toggle::before {
+  content: "Show Answer";
+}

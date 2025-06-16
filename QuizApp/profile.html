@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Profile</title>
+    <link rel="stylesheet" href="./Styles/styles.css" />
+  </head>
+  <body class="layout">
+    <header class="layout_header">
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <section aria-labelledby="profile-heading">
+        <h2 id="profile-heading" class="sr-only">User Profile</h2>
+        <div>
+          <h2>Indiana Jones</h2>
+          <img
+            src="/assets/worldTraveler.png"
+            alt="Profile avatar of Indiana Jones"
+            width="200"
+          />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          sunt id, impedit quibusdam exercitationem, nihil commodi voluptatem
+          eaque illo dicta nulla maxime doloribus non dolor aut! Aspernatur
+          similique assumenda eum?
+        </p>
+        <ul class="counter" aria-label="User statistics">
+          <li>
+            <img src="/assets/circle-help.png" alt="" aria-hidden="true" />
+            <span class="counter_value">14</span>
+          </li>
+          <li>
+            <img src="/assets/bookmark.png" alt="" aria-hidden="true" />
+            <span class="counter_value">4</span>
+          </li>
+        </ul>
+        <div>
+          <label for="dark-mode-toggle">Dark Mode</label>
+          <input
+            type="checkbox"
+            id="dark_mode_toggle"
+            aria-label="Toggle dark mode"
+          />
+          <div class="dark_mode_toggle">
+            <div class="dark_mode_toggle_handle"></div>
+        </div>
+      </section>
+    </main>
+    <nav class="layout__nav">
+      <ul class="nav">
+        <li class="nav_item">
+          <a
+            class="nav_link nav__link--active"
+            href="index.html"
+            aria-label="Home page"
+          >
+            <img src="assets/house.png" alt="Home" />
+          </a>
+        </li>
+        <li class="nav_item">
+          <a class="nav_link" href="bookmarks.html" aria-label="Bookmarks page">
+            <img src="assets/bookmark.png" alt="Bookmarks" />
+          </a>
+        </li>
+        <li class="nav_item">
+          <a class="nav_link" href="profile.html" aria-label="Profile page">
+            <img src="assets/circle-user-round.png" alt="Profile" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

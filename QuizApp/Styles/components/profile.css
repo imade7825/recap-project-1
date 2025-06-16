@@ -1,0 +1,30 @@
+/* Profil-Container mit Grid-Layout */
+.profile {
+  display: grid;
+  align-content: start;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+/* Wrapper für obere Profil-Sektion */
+.profile_top_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem; /* Leichter Abstand für bessere Optik */
+}
+
+/* Profilbild mit rundem Design */
+.profile_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Moderne Alternative zu 200px */
+  overflow: hidden; /* Verhindert Überlaufen von Bildern */
+  object-fit: cover; /* Stellt sicher, dass Bilder korrekt skaliert werden */
+}
+
+/* Biografie mit verbesserter Lesbarkeit */
+.profile_biografie {
+  line-height: 1.7; /* Beibehalten für gute Lesbarkeit */
+  font-size: 1rem; /* Konsistente Schriftgröße */
+}
