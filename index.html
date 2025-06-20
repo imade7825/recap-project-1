@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App - Home</title>
     <link rel="stylesheet" href="Styles/styles.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body class="layout">
     <header class="layout_header">
@@ -15,7 +16,10 @@
         <article class="card">
           <h2 class="card__question">What is the capital of China?</h2>
           <details class="card__answer">
-            <summary class="summary-toggle"></summary>
+            <summary
+              class="summary-toggle"
+              data-js="answer-show-hidden"
+            ></summary>
             <p>Beijing</p>
           </details>
           <ul class="tag_list">
@@ -23,7 +27,11 @@
             <li class="tag_list_item">Africa</li>
             <li class="tag_list_item">Europe</li>
           </ul>
-          <button class="bookmark" aria-label="Bookmark this question">
+          <button
+            class="bookmark"
+            data-js="bookmark-button"
+            aria-label="Bookmark this question"
+          >
             <img src="assets/bookmark.png" alt="Bookmark" />
           </button>
         </article>
@@ -88,6 +96,11 @@
         <li class="nav_item">
           <a class="nav_link" href="bookmarks.html" aria-label="Bookmarks page">
             <img src="assets/bookmark.png" alt="Bookmarks" />
+          </a>
+        </li>
+        <li class="nav_item">
+          <a class="nav_link" href="form.html" aria-label="NewForm page">
+            <img src="assets/circle-plus.png" alt="NewForm" />
           </a>
         </li>
         <li class="nav_item">

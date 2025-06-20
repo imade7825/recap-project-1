@@ -19,5 +19,6 @@
 .bookmark_icon_active {
   color: var(--green-500, #10b981); /* Aktive Farbe mit Fallback */
   fill: var(--green-500, #10b981); /* Konsistente Füllung */
-  background-color: inherit; /* Entfernt unnötigen Hintergrund */
+  /* background-color: inherit; Entfernt unnötigen Hintergrund */
+  background-color: white; /* fügt ein weißer Hintegrund */
 }

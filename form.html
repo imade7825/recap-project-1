@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - NewForm</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <script src="./form.js" defer></script>
+  </head>
+  <body class="layout">
+    <header class="layout_header">
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <form data-js="form">
+        <fieldset>
+          <legend for="legend">Your question</legend>
+          <textarea class="textarea" id="question" name="question" required></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Your Answer</legend>
+          <textarea class="textarea" id="answer" name="answer" required></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Tag</legend>
+          <input type="text" name="tag" id="tag" />
+        </fieldset>
+        <div class="container">
+          <button type="submit">Submit</button>
+        </div>
+        
+      </form>
+      <ul data-js="cardContainer">
+        
+
+      </ul>
+    </main>
+    <nav class="layout_nav">
+      <ul class="nav">
+        <li class="nav_item">
+          <a
+            class="nav_link nav__link--active"
+            href="index.html"
+            aria-label="Home page"
+          >
+            <img src="assets/house-plus.png" alt="Home" />
+          </a>
+        </li>
+        <li class="nav_item">
+          <a class="nav_link" href="bookmarks.html" aria-label="Bookmarks page">
+            <img src="assets/bookmark.png" alt="Bookmarks" />
+          </a>
+        </li>
+        <li class="nav_item">
+          <a class="nav_link" href="form.html" aria-label="NewForm page">
+            <img src="assets/badge-plus.png" alt="NewForm" />
+          </a>
+        </li>
+        <li class="nav_item">
+          <a class="nav_link" href="profile.html" aria-label="Profile page">
+            <img src="assets/circle-user.png" alt="Profile" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
