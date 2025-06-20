@@ -15,11 +15,25 @@
       <form data-js="form">
         <fieldset>
           <legend for="legend">Your question</legend>
-          <textarea class="textarea" id="question" name="question" required></textarea>
+          <textarea
+            class="textarea"
+            id="question"
+            name="question"
+            maxlength="150"
+            required
+          ></textarea>
+          <div id="question-count" class="char-count">0/150 characters</div>
         </fieldset>
-        <fieldset>
+        <fieldset maxlenth>
           <legend>Your Answer</legend>
-          <textarea class="textarea" id="answer" name="answer" required></textarea>
+          <textarea
+            class="textarea"
+            id="answer"
+            name="answer"
+            maxlength="150"
+            required
+          ></textarea>
+          <div id="answer-count" class="char-count">0/150 characters</div>
         </fieldset>
         <fieldset>
           <legend>Tag</legend>
@@ -28,12 +42,8 @@
         <div class="container">
           <button type="submit">Submit</button>
         </div>
-        
       </form>
-      <ul data-js="cardContainer">
-        
-
-      </ul>
+      <ul data-js="cardContainer"></ul>
     </main>
     <nav class="layout_nav">
       <ul class="nav">

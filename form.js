@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </button>
         </article>
         `;
-    console.log(newCard);
+    //console.log(newCard);
     // Append card to cards container
     cardsContainer.append(newCard);
 
@@ -51,3 +51,21 @@ document.addEventListener("DOMContentLoaded", () => {
     form.reset();
   });
 });
+// Shared function to update character count
+function updateCharCount(inputId, countId, maxLength) {
+  const input = document.getElementById(inputId);
+
+  const countDisplay = document.getElementById(countId);
+  //console.log(countDisplay);
+
+  input.addEventListener("input", () => {
+    //const currentLength = input.value.length;
+    const currentLength = input.value.length;
+    //console.log(currentLength);
+    countDisplay.textContent = `${currentLength}/${maxLength} characters`;
+  });
+}
+
+// Initialize character count for both fields
+updateCharCount("question", "question-count", 150);
+updateCharCount("answer", "answer-count", 150);
