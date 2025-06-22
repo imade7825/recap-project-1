@@ -3,23 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App - Home</title>
-    <link rel="stylesheet" href="Styles/styles.css" />
-    <script src="./index.js" defer></script>
+    <title>Quiz App - Bookmark</title>
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <script src="../javaScript/bookmarks.js" defer></script>
   </head>
   <body class="layout">
     <header class="layout_header">
       <h1>Quiz App</h1>
     </header>
-    <main class="layout__main">
+    <main class="layout_main">
       <section class="card-list">
         <article class="card">
-          <h2 class="card__question">What is the capital of China?</h2>
+          <h2 class="card_question">What is the capital of China?</h2>
           <details class="card__answer">
-            <summary
-              class="summary-toggle"
-              data-js="answer-show-hidden"
-            ></summary>
+            <summary>Show Answer</summary>
             <p>Beijing</p>
           </details>
           <ul class="tag_list">
@@ -32,13 +29,13 @@
             data-js="bookmark-button"
             aria-label="Bookmark this question"
           >
-            <img src="assets/bookmark.png" alt="Bookmark" />
+            <img src="../assets/bookmark-check.png" alt="Bookmark" />
           </button>
         </article>
         <article class="card">
           <h2 class="card__question">What is the capital of Germany?</h2>
           <details class="card__answer">
-            <summary class="summary-toggle"></summary>
+            <summary>Hide Answer</summary>
             <p>Berlin</p>
           </details>
           <ul class="tag_list">
@@ -46,14 +43,18 @@
             <li class="tag_list_item">Africa</li>
             <li class="tag_list_item">Europe</li>
           </ul>
-          <button class="bookmark" aria-label="Bookmark this question">
-            <img src="assets/bookmark.png" alt="Bookmark" />
+          <button
+            class="bookmark"
+            data-js="bookmark-button"
+            aria-label="Bookmark this question"
+          >
+            <img src="../assets/bookmark-check.png" alt="Bookmark" />
           </button>
         </article>
         <article class="card">
           <h2 class="card__question">What is the capital of Tunisia?</h2>
           <details class="card__answer">
-            <summary class="summary-toggle"></summary>
+            <summary>Show Answer</summary>
             <p>Tunis</p>
           </details>
           <ul class="tag_list">
@@ -61,14 +62,18 @@
             <li class="tag_list_item">Africa</li>
             <li class="tag_list_item">Europe</li>
           </ul>
-          <button class="bookmark" aria-label="Bookmark this question">
-            <img src="assets/bookmark.png" alt="Bookmark" />
+          <button
+            class="bookmark"
+            data-js="bookmark-button"
+            aria-label="Bookmark this question"
+          >
+            <img src="../assets/bookmark-check.png" alt="Bookmark" />
           </button>
         </article>
         <article class="card">
           <h2 class="card__question">What is the capital of South Africa?</h2>
           <details class="card__answer">
-            <summary class="summary-toggle"></summary>
+            <summary>Show Answer</summary>
             <p>Pretoria</p>
           </details>
           <ul class="tag_list">
@@ -76,36 +81,40 @@
             <li class="tag_list_item">Africa</li>
             <li class="tag_list_item">Europe</li>
           </ul>
-          <button class="bookmark" aria-label="Bookmark this question">
-            <img src="assets/bookmark.png" alt="Bookmark" />
+          <button
+            class="bookmark"
+            data-js="bookmark-button"
+            aria-label="Bookmark this question"
+          >
+            <img src="../assets/bookmark-check.png" alt="Bookmark" />
           </button>
         </article>
       </section>
     </main>
     <nav class="layout_nav">
       <ul class="nav">
-        <li class="nav_item">
+        <li class="nav__item">
           <a
             class="nav_link nav__link--active"
             href="index.html"
             aria-label="Home page"
           >
-            <img src="assets/house-plus.png" alt="Home" />
+            <img src="../assets/house.png" alt="Home" />
           </a>
         </li>
         <li class="nav_item">
           <a class="nav_link" href="bookmarks.html" aria-label="Bookmarks page">
-            <img src="assets/bookmark.png" alt="Bookmarks" />
+            <img src="../assets/bookmark-check.png" alt="Bookmarks" />
           </a>
         </li>
         <li class="nav_item">
           <a class="nav_link" href="form.html" aria-label="NewForm page">
-            <img src="assets/circle-plus.png" alt="NewForm" />
+            <img src="../assets/circle-plus.png" alt="NewForm" />
           </a>
         </li>
         <li class="nav_item">
           <a class="nav_link" href="profile.html" aria-label="Profile page">
-            <img src="assets/circle-user.png" alt="Profile" />
+            <img src="../assets/circle-user.png" alt="Profile" />
           </a>
         </li>
       </ul>

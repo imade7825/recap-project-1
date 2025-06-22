@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
             data-js="bookmark-button"
             aria-label="Bookmark this question"
           >
-            <img src="assets/bookmark.png" alt="Bookmark" />
+            <img src="../assets/bookmark.png" alt="Bookmark" />
           </button>
         </article>
         `;
